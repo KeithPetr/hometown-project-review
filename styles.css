@@ -8,6 +8,7 @@ body {
   font-family: "Original Surfer", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  min-width: 500px;
 }
 
 a {
@@ -25,6 +26,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 4em 2em;
 }
 
 .hero-background {
@@ -32,10 +34,9 @@ h3 {
   background-image: url("images/hero-boardwalk-img.jpg");
   background-repeat: none;
   background-size: cover;
-  padding: 200px;
 }
 
-#hero-title {
+.hero-title {
   background-color: #1d3557;
   padding: 5px;
   border-radius: 10px;
@@ -44,27 +45,26 @@ h3 {
   font-weight: bold;
 }
 
-#hero-brief-info {
+.hero-brief-info {
   background-color: #457b9d;
   padding: 10px 10px;
   border-radius: 10px;
+  width: 50%;
 }
 
 .activities-section {
   color: #1d3557;
   background-color: #f1faee;
-  padding: 50px;
 }
 
-#activities-flex {
+.activities-flex {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 50px;
 }
 
-#activities-title {
-  padding-bottom: 20px;
+.activities-title {
+  padding: 20px 0;
 }
 
 .activities-img {
@@ -75,17 +75,17 @@ h3 {
   margin-bottom: 15px;
 }
 
-#activities-beach {
+.activities-beach {
   padding: 10px;
   margin: 10px;
 }
 
-#activities-funland {
+.activities-funland {
   padding: 10px;
   margin: 10px;
 }
 
-#activities-tanger {
+.activities-tanger {
   padding: 10px;
   margin: 10px;
 }
@@ -96,8 +96,6 @@ h3 {
 
 .guide-card {
   background: #a8dadc;
-  height: 400px;
-  width: 700px;
   margin: 0 auto;
   display: block;
   padding: 0 20px;
@@ -105,14 +103,14 @@ h3 {
   border-bottom: 10px solid #1d3557;
 }
 
-#guide-img {
+.guide-img {
   width: 200px;
   height: 200px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
 
-#guide-card-flex {
+.guide-card-flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,6 +121,12 @@ h3 {
   margin-bottom: 5px;
 } */
 
-#guide-bio {
+.guide-bio {
   margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .activities-flex {
+    flex-direction: column;
+  }
 }
